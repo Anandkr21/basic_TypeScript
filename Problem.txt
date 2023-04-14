@@ -1,0 +1,70 @@
+Problem 1
+Description
+You need to create a function that takes 2 parameters, both of them should be of type number.
+This function returns the product of the parameters.
+Please make sure you don't use any type here
+
+
+Problem 2
+Description
+You need to create a function that takes 2 parameters, both of them should be of type number.
+This function returns the division of the numbers.
+Please make sure you don't use any type here
+
+
+Problem 3
+Description
+You need to create a TS tuple.
+In the tuple you can put 2 values. First one is a string and the second one is a boolean.
+Please make sure you don't use any type here
+Also make sure you don't use arrays
+
+Problem 4
+Description
+Create an interface for an object
+it should accept a title string
+it should accept a status boolean
+it should accept an id number
+Assign this interface to a variable named Obj(Already Given in Template).
+Please make sure you don't use any type here
+
+
+Problem 5
+Description
+Create a function getName
+it should accept firstname and lastname
+it should return fullname
+if I pass Nrupul and Dev as Params it should return Nrupul Dev. There should be space in between first and last name in the returned string.
+keep lastname optional.
+
+if lastname does not exist then return only firstname
+Please make sure you don't use any type here
+
+
+
+Problem 6
+Description
+You need to create a low-level design for a library.
+You need to write the following class with the given methods and instructions
+Create a class Book
+The constructor function of class Book which should accept the following params in the order:-
+section (A union type of Fiction, Documentary and Educational).
+name (String)
+Create a class Section
+The constructor function of class Section which will have the following properties:-
+
+name (A union type of Fiction, Documentary and Educational).
+books (Array of Book)
+The class Section will onely take name as a parameter. The books property will be initialized as an empty array.
+
+This class will have a method named addBook which takes a params of type Book and pushes it to the array books.
+
+Create a class Library
+
+The constructor function of class Library which will have the following properties:-
+
+name (String)
+sections (Array of Section)
+The class Library will onely take name as a parameter. The sections property will be initialized as an empty array.
+
+This class will have a method named addSection which takes a params of type Section and pushes it to the array sections.
