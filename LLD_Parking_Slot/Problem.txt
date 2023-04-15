@@ -1,0 +1,50 @@
+TS LLD Parking Slot:-
+
+Description:-
+Create a class Named Vehicle. This class will have 3 params:-
+
+(i) VehicleType (A Union Type of "Car", "Bike", "Bus"),
+(ii) RegistrationNumber (Number)
+(iii) Color (String)
+
+Create 3 classes which will inherit the Vehicle class.:- Car, Bike, Bus.
+
+The above 3 classes will not have any extra property other than it's parents properties. But the VehicleType will have a fixed value.
+
+The VehicleType of Bike class will be Bike
+Make sure all 3 classes will take 2 params with the below mentioned order:-
+
+(i) RegistrationNumber
+(ii) Color
+
+There will be Slot class which will have 2 properties:-
+
+(i) type(A Union Type of "Car", "Bike", "Bus")
+(ii) isBooked (boolean)
+
+Slot will only take type as params. By default isBooked will be false.
+
+Make another class ParkingSlot which will have 2 properties
+
+(i) maxLimit (Number)
+(ii) parkingSpots (Array of Slot)
+ParkingSlot will take only maxLimit as parameter & parkingSpots will be initialized with an empty array
+
+ParkingSlot will also have 3 methods:-
+
+(i) addSlots
+(ii) availableSlot
+(iii) bookSlot
+addSlots takes a Slot as parameter, pushes the slot to the parkingSpots array if the length of parkingSpots is lessThan maxLimit and returns the length of the parkingSpots.
+
+availableSlot takes a VehicleType as parameter and returns the number of Slot of that type which has isBooked false.
+
+For a example lets say currently there are 2 Car slot and 3 Bus slot and among the 3 Bus slots one of them has isBooked true.
+
+In this case if the availableSlot method is called with Bus it will return 2.
+
+bookSlot takes any of the 3 Classes which inherits Vehicle as parameter, checks the parkingSpots array and tries to find a slot with same type passed as params.
+
+If it is able to find out then makes the isBooked true for that Slot and returns true.
+
+If its not able to find any such slot it returns false

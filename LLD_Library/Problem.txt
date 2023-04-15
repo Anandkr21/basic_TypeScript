@@ -1,0 +1,34 @@
+TS LLD Library:-
+
+Description
+You need to create a low-level design for a library.
+
+You need to write the following class with the given methods and instructions
+
+- Create a class Book
+
+- The constructor function of class Book which should accept the following params in the order:-
+
+(i) section (A union type of Fiction, Documentary and Educational).
+(ii) name (String)
+
+Create a class Section
+
+The constructor function of class Section which will have the following properties:-
+
+(i) name (A union type of Fiction, Documentary and Educational).
+(ii) books (Array of Book)
+
+The class Section will onely take name as a parameter. The books property will be initialized as an empty array.
+
+This class will have a method named addBook which takes a params of type Book and pushes it to the array books.
+
+Create a class Library
+
+The constructor function of class Library which will have the following properties:-
+
+(i) name (String)
+(ii) sections (Array of Section)
+The class Library will onely take name as a parameter. The sections property will be initialized as an empty array.
+
+This class will have a method named addSection which takes a params of type Section and pushes it to the array sections.
